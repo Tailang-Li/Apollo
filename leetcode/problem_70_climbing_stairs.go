@@ -8,12 +8,9 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 
 func climbStairs(n int) int {
 
-	if n == 1 {
-		return 1
-	}
-
-	if n == 2 {
-		return 2
+	switch n {
+	case 1, 2:
+		return n
 	}
 
 	a, b := 1, 2

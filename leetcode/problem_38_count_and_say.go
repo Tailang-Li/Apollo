@@ -9,6 +9,7 @@ To determine how you "say" a digit string, split it into the minimal number of g
 */
 
 func countAndSay(n int) string {
+
 	result := "1"
 	for i := 2; i <= n; i++ {
 
